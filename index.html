@@ -1,130 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work Term Report</title>
-  <style>
-    :root {
-      color-scheme: dark;
-    }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Work Term Report</title>
+    
+    <!--Bootstrap CSS reference-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    
+    <!--Dark mode creation-->
+    <style>
+      body {
+        background-color: #121212; 
+        color: #ffffff; 
+      }
+      .custom-blue {
+        color: #3b59ff; 
+      }
+      .top-left-info {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 0.95rem;
+      }
+      .intro-paragraph {
+        max-width: 950px;
+        margin: 0 auto; 
+        text-align: center;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <!-- Top Left Information -->
+    <div class="top-left-info">
+      <div style="color: #a0a0a0;">Gael Dsouza</div>
+      <div class="custom-blue">Computer Science</div>
+    </div>
 
-    html, body {
-      height: 100%;
-      margin: 0;
-    }
-
-    body {
-      background: #111;
-      color: #f2f2f2;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .page {
-      min-height: 100%;
-      box-sizing: border-box;
-      padding: 1.5rem 2rem 3rem;
-    }
-
-    .name {
-      margin:0;
-      font-size: 1rem;
-      font-weight:700;
-      color: #d8d8d8;
-    }
-    .course{
-        margin:0;
-        font-size: 1rem;
-        font-weight:400;
-        color:#0e41eb;
-    }
-
-    .title-block {
-      margin-top: 1.25rem;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2.00rem, 4vw, 3rem);
-      font-weight: 500;
-      letter-spacing: 0.04em;
-    }
-
-    h2 {
-      margin: 0.5rem 0 0;
-      font-size: clamp(1rem, 2vw, 1.4rem);
-      font-weight: 400;
-      color:#0e41eb;
-;
-    }
-
-    .section {
-      margin-top: 2.5rem;
-    }
-
-    .section-title {
-      margin: 0;
-      font-size: clamp(1.2rem, 2.2vw, 1.6rem);
-      font-weight: 700;
-      text-transform: capitalize;
-    }
-
-    .writing-space {
-      margin-top: 1rem;
-      min-height: 16rem;
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 0.75rem;
-      background: rgba(255, 255, 255, 0.02);
-    }
-    .writing-space.no-box {
-      border: none;
-      background: transparent;
-      min-height: auto;
-      padding: 0;
-    }
-    .intro {
-      text-align: center;
-      padding: 1rem;
-      font-size: 1.125rem;
-    }
-    #introduction-heading {
-      font-size: clamp(1.4rem, 2.4vw, 1.8rem);
-      font-weight: 800;
-    }
-    .intro-img {
-      display: block;
-      margin: 1rem 0 0 0;
-      max-width: 40%;
-      height: auto;
-      border-radius: 0.5rem;
-    }
-    .img-caption {
-      text-align: left;
-      margin-top: 0.5rem;
-      font-size: 0.95rem;
-      color: #a0a0a0;
-    }
-  </style>
-</head>
-<body>
-  <main class="page">
-    <p class="name">Gael Dsouza</p>
-    <p class="course"> Computer Science </p>
-
-    <header style="text-align: center">
-        <h1>Work Term Report</h1>
-        <h2>Aurora Cannabis Inc. - IT Service Desk Co-op</h2>
+    <!-- Header Section -->
+    <header class="py-5 text-center mt-5">
+      <div class="container">
+        <h1 class="display-5">Work Term Report</h1>
+        <h3 class="custom-blue mt-3 fs-4">Aurora Cannabis Inc. - IT Service Desk Co-op</h3>
+      </div>
     </header>
 
-    <section class="section" aria-labelledby="introduction-heading">
-      <h2 id="introduction-heading" class="section-title">Introduction</h2>
-      <div class="writing-space no-box"><p class="intro">This website summarizes my first work term experience as an IT service desk Co-op at Aurora Cannabis Inc. at the Brampton Distribution Center.
-      My role focused on providing level 1 technical support for end users using the Service Now ticketing system, provisioning and configuring laptops using the Windows
-      Autopilot process, and working with the Cybersecurity team to resolve various issues flagged by Bell Cyber.</p>
-        <img src="images/officeimage.jpg" alt="officeimage" class="intro-img">
-        <p class="img-caption">Aurora Cannabis Inc. Brampton Distribution Center</p>
+    <!-- Main Content Section -->
+    <main class="container mt-4">
+      <h2 class="custom-blue fw-bold mb-4">Introduction</h2>
+      
+      <div class="intro-paragraph">
+        <p class="fs-5">
+          This website summarizes my first work term experience as an IT service desk Co-op at Aurora Cannabis Inc. at the Brampton Distribution Center. My role focused on providing level 1 technical support for end users using the Service Now ticketing system, provisioning and configuring laptops using the Windows Autopilot process, and working with the Cybersecurity team to resolve various issues flagged by Bell Cyber.
+        </p>
       </div>
-    </section>
-  </main>
-</body>
+    </main>
+
+    <!-- Local Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
