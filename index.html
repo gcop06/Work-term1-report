@@ -69,8 +69,11 @@
         gap: 0.75rem;
         margin-top: 1.25rem;
       }
-      .event-image {
+      .event-image-wrapper {
         width: calc(50% - 0.375rem);
+      }
+      .event-image {
+        width: 100%;
         max-width: none;
         height: auto;
         display: block;
@@ -121,8 +124,14 @@
           <img src="images/desk.jpg" class="desk-image" alt="Aurora Cannabis service desk">
           <h3 class="image-subheader text-center mt-3">My desk in the IT Office</h3>
           <div class="event-images">
-            <img src="images/poke.jpg" class="event-image" alt="Poke event">
-            <img src="images/bbq.jpg" class="event-image" alt="BBQ event">
+            <div class="event-image-wrapper text-center">
+              <img src="images/poke.jpg" class="event-image" alt="Poke event">
+              <div class="image-subheader mt-2">poke</div>
+            </div>
+            <div class="event-image-wrapper text-center">
+              <img src="images/bbq.jpg" class="event-image" alt="BBQ event">
+              <div class="image-subheader mt-2">bbq</div>
+            </div>
           </div>
         </div>
         <p>Most of the employee at the company are either remote or work on a hybrid schedule, but as a co-op student, I got the opportunity to work on-site with the other Aurora employees at the Brampton Distribution center.</p>
