@@ -25,9 +25,29 @@
       }
       .intro-paragraph {
         max-width: 950px;
-        margin: 0 auto; 
-        text-align: center;
+        margin: 0;
+        text-align: left;
         line-height: 1.6;
+        font-size: 1.02rem;
+      }
+      .intro-heading {
+        margin-left: 0;
+      }
+      .intro-section {
+        margin-top: 5rem !important;
+        padding-left: 0;
+      }
+      .office-image {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 0 auto;
+      }
+      .office-image-wrapper {
+        width: 100%;
+      }
+      .image-subheader {
+        font-size: 0.75rem;
       }
     </style>
   </head>
@@ -48,13 +68,29 @@
     </header>
 
     <!-- Main Content Section -->
-    <main class="container mt-4">
-      <h2 class="custom-blue fw-bold mb-4">Introduction</h2>
+    <main class="container intro-section">
+      <h2 class="custom-blue fw-bold mb-4 intro-heading">Introduction</h2>
       
       <div class="intro-paragraph">
-        <p class="fs-5">
-          This website summarizes my first work term experience as an IT service desk Co-op at Aurora Cannabis Inc. at the Brampton Distribution Center. My role focused on providing level 1 technical support for end users using the Service Now ticketing system, provisioning and configuring laptops using the Windows Autopilot process, and working with the Cybersecurity team to resolve various issues flagged by Bell Cyber.
-        </p>
+      <p>
+        This website summarizes my first work term experience as an IT service desk Co-op at Aurora Cannabis Inc. at the
+         Brampton Distribution Center. My role focused on providing level 1 technical support for end users using the Service Now ticketing system, 
+         provisioning and configuring laptops using the Windows Autopilot process, and working with the Cybersecurity team to resolve various issues 
+         flagged by Bell Cyber. I'm also working on a project that involves disabling and clearing stale devices from Aurora's Active Directory and Service Now Assets.
+      </p>
+      </div>
+
+      <div class="office-image-wrapper d-flex flex-column align-items-center mt-4">
+        <img src="images/officeimage.jpg" class="img-fluid office-image" alt="Aurora Cannabis office building">
+        <h3 class="text-white image-subheader text-center mt-3">Brampton Distribution Center</h3>
+      </div>
+
+      <h2 class="custom-blue fw-bold mb-4 intro-heading mt-5">About Aurora Cannabis Inc.</h2>
+      <div class="intro-paragraph">
+        <p>Aurora Cannabis Inc. is a Canadian licensed cannabis producer, headquartered in Edmonton. As of September 2018, Aurora Cannabis had eight licensed production facilities, five sales licences, and operations in 25 countries.
+          It had a funded capacity of over 625,000 kilograms of cannabis production per annum with the bulk of capacity based in Canada and a growing presence in international markets, particularly Denmark and Latin America.
+          The IT team at Aurora had various departments such as Service Desk, Infrastructure, Cybersecurity, Applications, Business Intelligence to name a few. As a co-op student within the 
+        Service Desk team, I had the opportunity to work and interact with almost all the IT departments which made this co-op experience eductional.</p>
       </div>
     </main>
 
