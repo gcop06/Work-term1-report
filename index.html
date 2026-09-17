@@ -23,6 +23,45 @@
         left: 20px;
         font-size: 0.95rem;
       }
+      .top-right-icon {
+        position: absolute;
+        top: 19px;
+        right: 11%;
+        width: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+      }
+      .top-right-icon img {
+        width: 52px;
+        height: 52px;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+      .top-right-icon span {
+        margin-top: 2px;
+        color: #ffffff;
+        font-size: 0.6rem;
+        line-height: 1;
+        white-space: nowrap;
+      }
+      .top-right-toggle {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .top-right-toggle:checked + .top-right-icon {
+        animation: spin-weed 0.8s ease-in-out;
+      }
+      @keyframes spin-weed {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
       .intro-paragraph {
         max-width: 950px;
         margin: 0;
@@ -106,6 +145,11 @@
       <div style="color: #a0a0a0;">Gael Dsouza</div>
       <div class="custom-blue">Computer Science</div>
     </div>
+    <input class="top-right-toggle" type="checkbox" id="weed-toggle">
+    <label class="top-right-icon" for="weed-toggle">
+      <img src="images/wee.png" alt="Weed icon" width="60" height="60">
+      <span>Click me!</span>
+    </label>
 
     <!-- Header Section -->
     <header class="py-5 text-center mt-5">
@@ -204,9 +248,16 @@
 
       <h2 class="custom-blue fw-bold mb-4 intro-heading mt-5 job-description-heading">Job description</h2>
       <div class="intro-paragraph">
-        <p>As an IT Service Desk Co-op student, my role primarily focused on Service Desk operations while also gaining hands-on exposure to IT infrastructure and cloud services. I have to handle incoming tickets in our ServiceNow queue, assisting with provisioning and configuring laptops using Microsoft Intune and Autopilot, assigning licenses to users using security groups within AD, fixing hardware issues related to Laptops or PCS. I also had the opportunity to work on 2 projects, the Evergreen project and the Stale Devices cleanup project. For the Evergreen project, I had to collaborate with my fellow IT service desk team members to ensure all old Microsoft Surface books were replaced with the newer Lenovo Devices. The Stale Devices project was lead by me and the IT team lead, where we had to disable and move all devices that haven't been logged into for more than 180 days.</p>
+        <p>As an IT Service Desk Co-op student, my role primarily focused on Service Desk operations while also gaining hands-on exposure to IT infrastructure and cloud services. 
+          I have to handle incoming tickets in our ServiceNow queue, assisting with provisioning and configuring laptops using Microsoft Intune and Autopilot, assigning licenses to users using security groups within AD, fixing hardware issues related to Laptops or PCS. I also had the opportunity to work on 2 projects, the Evergreen project and the Stale Devices cleanup project. 
+          For the Evergreen project, I had to collaborate with my fellow IT service desk team members to ensure all old Microsoft Surface books were replaced with the newer Lenovo Devices. 
+          The Stale Devices project was lead by me and the IT team lead, where we had to disable and move all devices that haven't been logged into for more than 180 days.
+        Most of the skills required for me to succeed in this role had to be learnt on the job. While some skills like scripting or cloud management were taught at University, most of my troubleshooting skills had to be learnt by handling various tickets and learning along the way.</p>
       </div>
       <h2 class="custom-blue fw-bold mb-4 intro-heading mt-5 conclusion-heading">Conclusion</h2>
+      <div class="intro-paragraph">
+        <p>Overall, the first 4 months of my 8-month co-op term at Aurora Cannabis Inc. has provided a great opportunity for me to apply my theoretically IT knowledge to actual IT issues. As we progressed through the term, I was able to handle more complex tickets and tasks assigned by the IT team lead. I was able to simultaneously learn and provide my help to the service desk team by handling complex tickets, communicating with users and other teams within Aurora to ensure issues are resolved on time, and escalating an issues whenever required. I gained a much stronger understanding on how various tools like ServiceNow, Azure, Intune, and Active Directory are important to ensure IT Service Desk functions smoothly. Besides technical experience, Aurora provided the best environment for me to learn and grow as co-op student. Everyone was extremely friendly and welcoming, making me feel like I belonged at Aurora right from the start. This made my learning experience more fun and enjoyable.</p>
+      </div>
     </main>
 
     <!-- Local Bootstrap JS -->
